@@ -9,6 +9,10 @@ public class NoQuarterState implements State{
 
     @Override
     public void insertQuarter() {
+        if(gumballMachine.getCount() < 1) {
+            System.out.println("Already sold out...");
+            gumballMachine.setState(gumballMachine.getSoldOutState());
+        }
         System.out.println("Insert a quarter...");
         this.gumballMachine.setState(gumballMachine.getHasQuarterState());
     }
