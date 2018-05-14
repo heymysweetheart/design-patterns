@@ -10,6 +10,7 @@ public class DecoratorDemo {
         ExecutingTimeListDecorator linkListDecorator = new ExecutingTimeListDecorator(new LinkedListProfiler());
         linkListDecorator.add("hi");
         linkListDecorator.size();
+        linkListDecorator.contains("bo");
 
         ExecutingTimeListDecorator timeListDecorator = new ExecutingTimeListDecorator(new ArrayListProfiler());
         timeListDecorator.add("hi");
