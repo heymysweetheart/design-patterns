@@ -1,0 +1,7 @@
+package com.yuliang.exam3;
+
+public interface BillPayFacadeInterface {
+  public Account createPaymentAccount(User user);
+  public void removePaymentAccount(Account account);
+  public boolean submitCreditCard(CreditCard card);
+}
