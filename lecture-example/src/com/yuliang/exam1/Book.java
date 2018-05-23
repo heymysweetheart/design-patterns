@@ -1,4 +1,4 @@
-package com.yuliang.exam;
+package com.yuliang.exam1;
 
 public class Book implements LibraryItem{
 
